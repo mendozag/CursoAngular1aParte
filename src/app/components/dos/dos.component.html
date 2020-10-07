@@ -1,0 +1,24 @@
+<div class="container">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th></th>
+        <th>Producto</th>
+        <th>Marca</th>
+        <th>Categoría</th>
+        <th>Precio</th>
+        <th>Estatus</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><button (click)="emitirEvento($event)">Padre</button></td>
+        <td>{{nombre}}</td>
+        <td>{{marca}}</td>
+        <td>{{categoria}}</td>
+        <td>$ {{precio}}.00</td>
+        <td>No se sabe</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

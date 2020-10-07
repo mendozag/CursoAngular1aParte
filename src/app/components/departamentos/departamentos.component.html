@@ -1,0 +1,20 @@
+<h1>{{titulo}}</h1>
+<div class="container">
+  <table>
+    <tr *ngFor="let user of this.users, let i=index">
+      <td>{{i}}</td>
+      <td>
+        <button
+          (click)="redirigir(i)"
+          type="button"
+          class="btn btn-warning btn-sm"
+        >
+          Ver
+        </button>
+      </td>
+      <td>{{user.name}}</td>
+      <td>{{user.username}}</td>
+      <td>{{user.address.city}}</td>
+    </tr>
+  </table>
+</div>

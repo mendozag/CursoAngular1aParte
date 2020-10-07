@@ -1,0 +1,30 @@
+<h1>{{titulo}}</h1>
+<input type="text" [(ngModel)]="producto_a_guardar" />
+<br />
+<p>{{producto_a_guardar}}</p>
+<br />
+<br />
+<button
+  (click)="guardarProducto()"
+  typ="buttonn"
+  class="btn btn-warning btn-sm"
+>
+  Guardar Producto
+</button>
+<br />
+<hr />
+<ul>
+  <li
+    style="margin: 15px"
+    *ngFor="let producto of catalogo_productos, let i = index  "
+  >
+    {{i}} - {{producto}} -
+    <button
+      (click)="eliminarProducto(i)"
+      typ="buttonn"
+      class="btn btn-danger btn-sm"
+    >
+      Borrar
+    </button>
+  </li>
+</ul>
